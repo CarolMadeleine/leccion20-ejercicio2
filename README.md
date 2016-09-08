@@ -20,16 +20,18 @@ var feature = "callbacks";
 
 ``` javascript
 
-(function () {
 var feature = "closures";
+(function () {
 if ( typeof feature === "undefined"){         
-	var feature = "callbacks";         
+	feature = "callbacks";         
 		console.log("JS coders love its " + feature );     
 	} else {       
 	console.log("JS developers love its " + feature );     
 	}
  })();
 ```
+##Cambio
+Se eleimino el `var` para que cuando se ejucute la función no lea la asigación de feature callbacks. Si no lea de la variable global feature clousures y muestre le mensaje que se pide.
 
 ##Contexto
 
